@@ -6,9 +6,8 @@
 *Onex is a library of all hacking tools for termux and other linux distribution.*
 onex is for Termux and other android terminals. Using onex, you can install all hacking tools in Termux and other Linux based distributions.
 
-<p align="center">
-<img height="200px" width="200px" src="https://github.com/Rajkumrdusad/onex/blob/master/doc/Logo.jpg"/>
-</p>
+
+<img height="200px" width="200px" src="https://github.com/Rajkumrdusad/onex/blob/master/doc/Logo.png"/>
 
 ------------------------------------------------------------------------
 
