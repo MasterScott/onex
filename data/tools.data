@@ -1,1 +1,19 @@
-# data
+git|git|package|null|package_manager|null
+curl|curl|package|null|package_manager|null
+wget|wget|package|null|package_manager|null
+nano|nano|package|null|package_manager|null
+figlet|figlet|package|null|package_manager|null
+
+c|clang|programming_language|null|package_manager|null
+c++|clang|programming_language|null|package_manager|null
+clang|clang|programming_language|null|package_manager|null
+python|python|programming_language|null|package_manager|null
+perl|perl|programming_language|null|package_manager|null
+ruby|ruby|programming_language|null|package_manager|null
+golang|golang|programming_language|null|package_manager|null
+nodejs|nodejs|programming_language|null|package_manager|null
+php|php|programming_language|null|package_manager|null
+
+hydra|hydra|stress_testing,password_attack|null|package_manager|null
+IP-Tracer|IP-Tracer|ip_tracking|https://github.com/Rajkumrdusad/IP-Tracer|git|python, git ,nano
+Arch Linux|setupTermuxArch.sh|termux_os|https://raw.githubusercontent.com/sdrausty/TermuxArch/master/setupTermuxArch.sh|wget|wget
