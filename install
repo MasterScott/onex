@@ -1,0 +1,224 @@
+#!/bin/sh
+# onex v0.1
+
+logo="\033[01;33m
+  ___  _ __   ___\033[01;31m__  __
+\033[01;33m / _ \\| '_ \\ / _ \033[01;31m\\ \\/ /
+\033[01;33m| (_) | | | |  __/\033[01;31m>  < 
+\033[01;33m \___/|_| |_|\\___\033[01;31m/_/\_\\
+"
+if [ -d ~/ ]; then
+  home="~/"
+fi
+
+if [ -d /bin ]; then
+  bin="/bin"
+elif [ -d /usr/bin ]; then
+  bin="/usr/bin"
+elif [ -d /data/data/com.termux/files/usr/bin ]; then
+  bin="/data/data/com.termux/files/usr/bin"
+fi
+
+if [ -d /data/data/com.termux/files/usr/etc ]; then
+  dir="/data/data/com.termux/files/usr/etc"
+elif [ -d /etc ]; then
+  dir="/etc"
+fi
+
+if [ -e /bin/apt ]; then
+  if [ -e /bin/sudo ]; then
+    pac="sudo apt-get"
+    system="linux"
+    sudo="sudo"
+  else
+    pac="apt-get"
+    system="linux"
+    sudo=""
+  fi
+elif [ -e /bin/apt-get ]; then
+  if [ -e /bin/sudo ]; then
+    pac="sudo apt-get"
+    system="linux"
+    sudo="sudo"
+  else
+    pac="apt-get"
+    system="linux"
+    sudo=""
+  fi
+elif [ -e /usr/bin/apt-get ]; then
+  if [ -e /usr/bin/sudo ]; then
+    pac="sudo apt-get"
+    system="linux"
+    sudo="sudo"
+  else
+    pac="apt-get"
+    system="linux"
+    sudo=""
+  fi
+elif [ -e /bin/yum ]; then
+  if [ -e /bin/sudo ]; then
+    pac="sudo yum"
+    system="fedora"
+    sudo="sudo"
+  else
+    pac="yum"
+    system="fedora"
+    sudo=""
+  fi
+elif [ -e /usr/bin/yum ]; then
+  if [ -e /usr/bin/sudo ]; then
+    pac="sudo yum"
+    system="fedora"
+    sudo="sudo"
+  else
+    pac="yum"
+    system="fedora"
+    sudo=""
+  fi
+elif [ -e /bin/brew ]; then
+  if [ -e /bin/sudo ]; then
+    pac="sudo brew"
+    system="mac"
+    sudo="sudo"
+  else
+    pac="brew"
+    system="mac"
+    sudo=""
+  fi
+elif [ -e /usr/bin/brew ]; then
+  if [ -e /usr/bin/sudo ]; then
+    pac="sudo brew"
+    system="mac"
+    sudo="sudo"
+  else
+    pac="brew"
+    system="mac"
+    sudo=""
+  fi
+elif [ -e /data/data/com.termux/files/usr/bin/pkg ]; then
+  if [ -e /data/data/com.termux/files/usr/bin/sudo ]; then
+    pac="sudo pkg"
+    system="termux"
+    sudo="sudo"
+  else
+    pac="pkg"
+    system="termux"
+    sudo=""
+  fi
+elif [ -e /data/data/com.termux/files/usr/bin/apt ]; then
+  if [ -e /data/data/com.termux/files/usr/bin/sudo ]; then
+    pac="sudo apt"
+    system="termux"
+    sudo="sudo"
+  else
+    pac="apt"
+    system="termux"
+    sudo=""
+  fi
+elif [ -e /data/data/com.termux/files/usr/bin/apt-get ]; then
+  if [ -e /data/data/com.termux/files/usr/bin/sudo ]; then
+    pac="sudo apt-get"
+    system="termux"
+    sudo="sudo"
+  else
+    pac="apt-get"
+    system="termux"
+    sudo=""
+  fi
+fi
+
+# setup process
+clear
+echo "$logo"
+echo "\007\033[01;32m Installing .... \033[00m"
+sleep 1
+echo "\033[01;33m Running setup .... \033[00m"
+sleep 1
+
+# installing dependency
+if [ ! -e $bin/wget ]; then
+  if [ $sudo ]; then
+    $sudo $pac install wget -y
+  else
+    $pac install wget -y
+  fi
+fi
+if [ ! -e $bin/curl ]; then
+  if [ $sudo ]; then
+    $sudo $pac install curl -y
+  else
+    $pac install curl -y
+  fi
+fi
+if [ ! -e $bin/git ]; then
+  if [ $sudo ]; then
+    $sudo $pac install git -y
+  else
+    $pac install git -y
+  fi
+fi
+
+# removing old one
+if [ -e $bin/onex ]; then
+  if [ -d $dir/onex ]; then
+    if [ $sudo ]; then
+      $sudo rm -rf $bin/onex
+      $sudo rm -rf $dir/onex
+    else
+      rm -rf $bin/onex
+      rm -rf $dir/onex
+    fi
+  fi
+fi
+
+# install onex
+if [ $0 = "install" -o $0 = "./install" ]; then
+  if [ -e onex ]; then
+    if [ $sudo ]; then
+      $sudo mv -v onex $bin
+      $sudo chmod +x $bin/onex
+    else
+      mv -v onex $bin
+      chmod +x $bin/onex
+    fi
+  fi
+  cd ..
+  if [ -d onex ]; then
+    if [ $sudo ]; then
+    $sudo mv -v onex $dir
+    else
+      mv -v onex $dir
+    fi
+  fi
+else
+  if [ -e onex/onex ]; then
+    if [ $sudo ]; then
+      $sudo mv -v onex/onex $bin
+      $sudo chmod +x $bin/onex
+    else
+      mv -v onex/onex $bin
+      chmod +x $bin/onex
+    fi
+  fi
+  if [ -d onex ]; then
+    if [ $sudo ]; then
+    $sudo mv -v onex $dir
+    else
+      mv -v onex $dir
+    fi
+  fi
+fi
+
+# check onex is installed or not
+if [ -e $bin/onex ]; then
+  if [ -d $dir/onex ]; then
+    clear
+    echo "$logo"
+    echo " \033[01;33mOnex \033[01;32mis installed successfully !!"
+    echo " \033[01;32mfor more information type \033[01;33m'onex -h'\033[00m"
+  else
+    echo "$logo"
+    echo " \033[01;31mSorry \033[00m: onex \033[01;31mis not installed !!"
+    echo " \033[01;32mPlease try again\033[00m"
+  fi
+fi
