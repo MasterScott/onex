@@ -7,7 +7,7 @@
 onex is for Termux and other android terminals. Using onex, you can install all hacking tools in Termux and other Linux based distributions.
 
 
-<img height="200px" width="200px" src="https://github.com/Rajkumrdusad/onex/blob/master/doc/Logo.png"/>
+<img height="300px" width="500px" src="https://github.com/Rajkumrdusad/onex/blob/master/doc/Logo.png"/>
 
 ------------------------------------------------------------------------
 
