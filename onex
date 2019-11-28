@@ -786,20 +786,20 @@ update() {
           sleep 1
           if [ -e $bin/git ]; then
             if [ $sudo ]; then
-              $sudo git clone https://github.com/Rajkumrdusad/onex.git ~/
+              $sudo git clone https://github.com/Rajkumrdusad/onex.git ~/onex
               $sudo sh ~/onex/install
             else
-              git clone https://github.com/Rajkumrdusad/onex.git ~/
+              git clone https://github.com/Rajkumrdusad/onex.git ~/onex
               sh ~/onex/install
             fi
           else
             if [ $sudo ]; then
               $sudo $pac install git -y
-              $sudo git clone https://github.com/Rajkumrdusad/onex.git ~/
+              $sudo git clone https://github.com/Rajkumrdusad/onex.git ~/onex
               $sudo sh ~/onex/install
             else
               $pac install git -y
-              git clone https://github.com/Rajkumrdusad/onex.git ~/
+              git clone https://github.com/Rajkumrdusad/onex.git ~/onex
               sh ~/onex/install
             fi
           fi
@@ -904,20 +904,20 @@ cli_update() {
     sleep 1
     if [ -e $bin/git ]; then
       if [ $sudo ]; then
-        $sudo git clone https://github.com/Rajkumrdusad/onex.git ~/
+        $sudo git clone https://github.com/Rajkumrdusad/onex.git ~/onex
         $sudo sh ~/onex/install
       else
-        git clone https://github.com/Rajkumrdusad/onex.git ~/
+        git clone https://github.com/Rajkumrdusad/onex.git ~/onex
         sh ~/onex/install
        fi
     else
       if [ $sudo ]; then
         $sudo $pac install git -y
-        $sudo git clone https://github.com/Rajkumrdusad/onex.git ~/
+        $sudo git clone https://github.com/Rajkumrdusad/onex.git ~/onex
         $sudo sh ~/onex/install
       else
         $pac install git -y
-        git clone https://github.com/Rajkumrdusad/onex.git ~/
+        git clone https://github.com/Rajkumrdusad/onex.git ~/onex
         sh ~/onex/install
       fi
     fi
