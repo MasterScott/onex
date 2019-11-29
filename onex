@@ -180,6 +180,8 @@ install() {
           #check user is online or not
           wget -q --spider http://google.com
           if [ $? -eq 0 ]; then
+            echo "\033[01;32mInstalling ...\033[00m"
+            sleep 1
             # install tool dependency
             if [ $tool_dependency != "null" ]; then
               for dep_name in `echo $tool_dependency | tr ',' ' '`; do
@@ -200,6 +202,8 @@ install() {
           #check user is online or not
           wget -q --spider http://google.com
           if [ $? -eq 0 ]; then
+            echo "\033[01;32mInstalling ...\033[00m"
+            sleep 1
             # install tool dependency
             if [ $tool_dependency != "null" ]; then
               for dep_name in `echo $tool_dependency | tr ',' ' '`; do
@@ -236,6 +240,8 @@ install() {
           #check user is online or not
           wget -q --spider http://google.com
           if [ $? -eq 0 ]; then
+            echo "\033[01;32mInstalling ...\033[00m"
+            sleep 1
             # install tool dependency
             if [ $tool_dependency != "null" ]; then
               for dep_name in `echo $tool_dependency | tr ',' ' '`; do
@@ -256,6 +262,8 @@ install() {
           #check user is online or not
           wget -q --spider http://google.com
           if [ $? -eq 0 ]; then
+            echo "\033[01;32mInstalling ...\033[00m"
+            sleep 1
             # install tool dependency
             if [ $tool_dependency != "null" ]; then
               for dep_name in `echo $tool_dependency | tr ',' ' '`; do
@@ -292,6 +300,8 @@ install() {
           #check user is online or not
           wget -q --spider http://google.com
           if [ $? -eq 0 ]; then
+            echo "\033[01;32mInstalling ...\033[00m"
+            sleep 1
             # install tool dependency
             if [ $tool_dependency != "null" ]; then
               for dep_name in `echo $tool_dependency | tr ',' ' '`; do
@@ -312,6 +322,8 @@ install() {
           #check user is online or not
           wget -q --spider http://google.com
           if [ $? -eq 0 ]; then
+            echo "\033[01;32mInstalling ...\033[00m"
+            sleep 1
             # install tool dependency
             if [ $tool_dependency != "null" ]; then
               for dep_name in `echo $tool_dependency | tr ',' ' '`; do
@@ -348,6 +360,8 @@ install() {
           #check user is online or not
           wget -q --spider http://google.com
           if [ $? -eq 0 ]; then
+            echo "\033[01;32mInstalling ...\033[00m"
+            sleep 1
             # install tool dependency
             if [ $tool_dependency != "null" ]; then
               for dep_name in `echo $tool_dependency | tr ',' ' '`; do
@@ -368,6 +382,8 @@ install() {
           #check user is online or not
           wget -q --spider http://google.com
           if [ $? -eq 0 ]; then
+            echo "\033[01;32mInstalling ...\033[00m"
+            sleep 1
             # install tool dependency
             if [ $tool_dependency != "null" ]; then
               for dep_name in `echo $tool_dependency | tr ',' ' '`; do
@@ -427,6 +443,8 @@ install_category_tool() {
           #check user is online or not
           wget -q --spider http://google.com
           if [ $? -eq 0 ]; then
+            echo "\033[01;32mInstalling ...\033[00m"
+            sleep 1
             # install tool dependency
             if [ $tool_dependency != "null" ]; then
               for dep_name in `echo $tool_dependency | tr ',' ' '`; do
@@ -447,6 +465,8 @@ install_category_tool() {
           #check user is online or not
           wget -q --spider http://google.com
           if [ $? -eq 0 ]; then
+            echo "\033[01;32mInstalling ...\033[00m"
+            sleep 1
             # install tool dependency
             if [ $tool_dependency != "null" ]; then
               for dep_name in `echo $tool_dependency | tr ',' ' '`; do
@@ -483,6 +503,8 @@ install_category_tool() {
           #check user is online or not
           wget -q --spider http://google.com
           if [ $? -eq 0 ]; then
+            echo "\033[01;32mInstalling ...\033[00m"
+            sleep 1
             # install tool dependency
             if [ $tool_dependency != "null" ]; then
               for dep_name in `echo $tool_dependency | tr ',' ' '`; do
@@ -503,6 +525,8 @@ install_category_tool() {
           #check user is online or not
           wget -q --spider http://google.com
           if [ $? -eq 0 ]; then
+            echo "\033[01;32mInstalling ...\033[00m"
+            sleep 1
             # install tool dependency
             if [ $tool_dependency != "null" ]; then
               for dep_name in `echo $tool_dependency | tr ',' ' '`; do
@@ -539,6 +563,8 @@ install_category_tool() {
           #check user is online or not
           wget -q --spider http://google.com
           if [ $? -eq 0 ]; then
+            echo "\033[01;32mInstalling ...\033[00m"
+            sleep 1
             # install tool dependency
             if [ $tool_dependency != "null" ]; then
               for dep_name in `echo $tool_dependency | tr ',' ' '`; do
@@ -559,6 +585,8 @@ install_category_tool() {
           #check user is online or not
           wget -q --spider http://google.com
           if [ $? -eq 0 ]; then
+            echo "\033[01;32mInstalling ...\033[00m"
+            sleep 1
             # install tool dependency
             if [ $tool_dependency != "null" ]; then
               for dep_name in `echo $tool_dependency | tr ',' ' '`; do
@@ -595,6 +623,8 @@ install_category_tool() {
           #check user is online or not
           wget -q --spider http://google.com
           if [ $? -eq 0 ]; then
+            echo "\033[01;32mInstalling ...\033[00m"
+            sleep 1
             # install tool dependency
             if [ $tool_dependency != "null" ]; then
               for dep_name in `echo $tool_dependency | tr ',' ' '`; do
@@ -615,6 +645,8 @@ install_category_tool() {
           #check user is online or not
           wget -q --spider http://google.com
           if [ $? -eq 0 ]; then
+            echo "\033[01;32mInstalling ...\033[00m"
+            sleep 1
             # install tool dependency
             if [ $tool_dependency != "null" ]; then
               for dep_name in `echo $tool_dependency | tr ',' ' '`; do
@@ -998,6 +1030,8 @@ install_process() {
           #check user is online or not
           wget -q --spider http://google.com
           if [ $? -eq 0 ]; then
+            echo "\033[01;32mInstalling ...\033[00m"
+            sleep 1
             # install tool dependency
             if [ $tool_dependency != "null" ]; then
               for dep_name in `echo $tool_dependency | tr ',' ' '`; do
@@ -1018,6 +1052,8 @@ install_process() {
           #check user is online or not
           wget -q --spider http://google.com
           if [ $? -eq 0 ]; then
+            echo "\033[01;32mInstalling ...\033[00m"
+            sleep 1
             # install tool dependency
             if [ $tool_dependency != "null" ]; then
               for dep_name in `echo $tool_dependency | tr ',' ' '`; do
@@ -1054,6 +1090,8 @@ install_process() {
           #check user is online or not
           wget -q --spider http://google.com
           if [ $? -eq 0 ]; then
+            echo "\033[01;32mInstalling ...\033[00m"
+            sleep 1
             # install tool dependency
             if [ $tool_dependency != "null" ]; then
               for dep_name in `echo $tool_dependency | tr ',' ' '`; do
@@ -1074,6 +1112,8 @@ install_process() {
           #check user is online or not
           wget -q --spider http://google.com
           if [ $? -eq 0 ]; then
+            echo "\033[01;32mInstalling ...\033[00m"
+            sleep 1
             # install tool dependency
             if [ $tool_dependency != "null" ]; then
               for dep_name in `echo $tool_dependency | tr ',' ' '`; do
@@ -1110,6 +1150,8 @@ install_process() {
           #check user is online or not
           wget -q --spider http://google.com
           if [ $? -eq 0 ]; then
+            echo "\033[01;32mInstalling ...\033[00m"
+            sleep 1
             # install tool dependency
             if [ $tool_dependency != "null" ]; then
               for dep_name in `echo $tool_dependency | tr ',' ' '`; do
@@ -1130,6 +1172,8 @@ install_process() {
           #check user is online or not
           wget -q --spider http://google.com
           if [ $? -eq 0 ]; then
+            echo "\033[01;32mInstalling ...\033[00m"
+            sleep 1
             # install tool dependency
             if [ $tool_dependency != "null" ]; then
               for dep_name in `echo $tool_dependency | tr ',' ' '`; do
@@ -1167,6 +1211,8 @@ install_process() {
           wget -q --spider http://google.com
           if [ $? -eq 0 ]; then
             # install tool dependency
+            echo "\033[01;32mInstalling ...\033[00m"
+            sleep 1
             if [ $tool_dependency != "null" ]; then
               for dep_name in `echo $tool_dependency | tr ',' ' '`; do
                 # installing dependency
@@ -1186,6 +1232,8 @@ install_process() {
           #check user is online or not
           wget -q --spider http://google.com
           if [ $? -eq 0 ]; then
+            echo "\033[01;32mInstalling ...\033[00m"
+            sleep 1
             # install tool dependency
             if [ $tool_dependency != "null" ]; then
               for dep_name in `echo $tool_dependency | tr ',' ' '`; do
