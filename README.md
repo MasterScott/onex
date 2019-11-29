@@ -64,8 +64,6 @@ Enter a Number for a specific output:
 - (4) : If you want to know About Us.
 - (5) : To exit the tool.
 
-<br/>
-
 ------------------------------------------------------------------------
 
 **Warning**
