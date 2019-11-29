@@ -5,7 +5,10 @@ onex is for Termux and other android terminals. Using onex, you can install all 
 onex can install any tools jus single click. use `onex install [tool_name]` command to install any hacking tool.
 
 <br>
-<img width="60%" src="https://github.com/Rajkumrdusad/onex/blob/master/doc/logo.png"/>
+<p align="center">
+<img width="80%" src="https://github.com/Rajkumrdusad/onex/blob/master/doc/logo.png"/>
+<img width="80%" src="https://github.com/Rajkumrdusad/onex/blob/master/doc/onex.png"/>
+</p>
 
 ------------------------------------------------------------------------
 
