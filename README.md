@@ -12,7 +12,7 @@ onex can install any tools jus single click. use `onex install [tool_name]` comm
 
 ------------------------------------------------------------------------
 
-### Operating System Requirements
+## Operating System Requirements
 
 onex works on any of the following operating systems:<br>
 - Android (Using the Termux App) <br>
@@ -20,7 +20,7 @@ onex works on any of the following operating systems:<br>
 
 ------------------------------------------------------------------------
 
-### How to Install
+## How to Install
 
 Open the terminal and type following commands.
 
@@ -36,9 +36,9 @@ Open the terminal and type following commands.
 
 ------------------------------------------------------------------------
 
-### How to Use
+## How to use onex ?
 
-#### CLI Mode :
+### CLI Mode :
 `onex -h` or `onex help` for help.
 
 Options :
@@ -53,7 +53,7 @@ Options :
 - `onex help` get help.
 - `onex -h` get help.
 
-#### Menu Mode :
+### Menu Mode :
 
 `onex start` to start onex menu mode.
 
