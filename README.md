@@ -1,17 +1,15 @@
 # Onex v2.0
 
-### Introduction
-
 *Onex is a library of all hacking tools for termux and other linux distribution.*
 onex is for Termux and other android terminals. Using onex, you can install all hacking tools in Termux and other Linux based distributions.
 onex can install any tools jus single click. use `onex install [tool_name]` command to install any hacking tool.
 
 <br>
-<img src="https://github.com/Rajkumrdusad/onex/blob/master/doc/scr0.png"/>
+<img width="60%" src="https://github.com/Rajkumrdusad/onex/blob/master/doc/scr0.png"/>
 
 ------------------------------------------------------------------------
 
-### :cyclone: &nbsp; Operating System Requirements &nbsp; :cyclone:
+### Operating System Requirements
 
 onex works on any of the following operating systems:<br>
 - Android (Using the Termux App) <br>
@@ -19,7 +17,7 @@ onex works on any of the following operating systems:<br>
 
 ------------------------------------------------------------------------
 
-### :inbox_tray: &nbsp; How to Install &nbsp; :inbox_tray:
+### How to Install
 
 Open the terminal and type following commands.
 
@@ -35,7 +33,7 @@ Open the terminal and type following commands.
 
 ------------------------------------------------------------------------
 
-### :fire: &nbsp; How to Use &nbsp; :fire:
+### How to Use
 
 #### CLI Mode :
 `onex -h` or `onex help` for help.
@@ -67,7 +65,7 @@ Enter a Number for a specific output:
 
 ------------------------------------------------------------------------
 
-:warning: &nbsp; **Warning** &nbsp; :warning:
+**Warning**
 
 Please use this tool at your own risk!
 
