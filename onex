@@ -11,7 +11,9 @@ logo="\033[01;33m
 "
 prompt="\007\033[00m[\033[01;34monex\033[00m@\033[01;34mspace\033[00m]$"
 
-if [ -d ~/ ]; then
+if [ -d $HOME ]; then
+  home=$HOME
+else
   home="~/"
 fi
 
@@ -875,12 +877,9 @@ menu() {
 # list all tools from data
 cli_list_all() {
   # get all tools data
-  for data in `grep "." $tools_data | sort -f | grep -n '.' | sed -n 's/:/|/p' | cut -d"|" -f1,2 | tr ' ' '@'`; do
-    # display tools name from data
-    for tool in $data; do
-      echo " \033[01;32m$tool\033[00m" | tr '|' ' ' | tr '@' ' '
-    done
-  done
+  tool=`grep "." $tools_data | sort -f | grep -n '.' | sed -n 's/:/|/p' | cut -d"|" -f1,2 | tr '|' ' '`
+  # display tools name from data
+  echo "\033[01;32m$tool\033[00m"
 }
 
 # comming soon
@@ -1196,7 +1195,18 @@ cli_install() {
   fi
 }
 
-# cli
+# search tool
+cli_search() {
+  # get tools data
+  similar=`grep -i "^$1" $tools_data | cut -d"|" -f1 | tr ' ' '@'`
+  if [ "$similar" ]; then
+    echo -n "\033[01;32m"
+    grep -i "^$1" $tools_data | cut -d"|" -f1 | tr ' ' '@'
+    echo -n "\033[00m"
+  fi
+}
+
+# cli mode
 if [ $# -eq 1 ]; then
   case $1 in
     start)
@@ -1217,6 +1227,7 @@ if [ $# -eq 1 ]; then
       echo "  list -a \tlist all tools."
       echo "  -l a \t\tlist all tools."
       echo "  install, -i \tinstall any tools."
+      echo "  search, -s \tsearch tools."
       echo "  update, -u \tupdate onex."
       echo "  start \tstart onex menu mode."
     ;;
@@ -1240,6 +1251,9 @@ elif [ $# -eq 2 ]; then
     ;;
     install|-i)
       cli_install $2
+    ;;
+    search|-s)
+      cli_search $2
     ;;
     *)
       echo "\007\033[01;31mSorry \033[00m: '$1' \033[01;31minvalid option!!\033[00m"
