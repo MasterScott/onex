@@ -41,16 +41,16 @@ Open the terminal and type following commands.
 `onex -h` or `onex help` for help.
 
 Options :
-- `onex install [tool_name]` install any tool.
-- `onex -i [tool_name]` install any tool.
-- `onex search [tool_name]` search any tool.
-- `onex -s [tool_name]` search any tool.
-- `onex list` list all tools.
-- `onex list -a` list all tools.
-- `onex -l` list all tools.
-- `onex -l -a` list all tools.
-- `onex help` get help.
-- `onex -h` get help.
+- **`onex install [tool_name]` install any tool.**
+- **`onex -i [tool_name]` install any tool.**
+- **`onex search [tool_name]` search any tool.**
+- **`onex -s [tool_name]` search any tool.**
+- **`onex list` list all tools.**
+- **`onex list -a` list all tools.**
+- **`onex -l` list all tools.**
+- **`onex -l -a` list all tools.**
+- **`onex help` get help.**
+- **`onex -h` get help.**
 
 #### Menu Mode :
 
