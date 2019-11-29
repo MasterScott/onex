@@ -4,17 +4,18 @@
 
 *Onex is a library of all hacking tools for termux and other linux distribution.*
 onex is for Termux and other android terminals. Using onex, you can install all hacking tools in Termux and other Linux based distributions.
+onex can install any tools jus single click. use `onex install [tool_name]` command to install any hacking tool.
 
 
-<img height="300px" width="500px" src="https://github.com/Rajkumrdusad/onex/blob/master/doc/Logo.png"/>
+<img src="https://github.com/Rajkumrdusad/onex/blob/master/doc/Logo.png"/>
 
 ------------------------------------------------------------------------
 
 ### :cyclone: &nbsp; Operating System Requirements &nbsp; :cyclone:
 
 onex works on any of the following operating systems:<br>
-• Android (Using the Termux App) <br>
-• Linux (Linux Based Systems) <br>
+- Android (Using the Termux App) <br>
+- Linux (Linux Based Systems) <br>
 
 ------------------------------------------------------------------------
 
@@ -36,6 +37,23 @@ Open the terminal and type following commands.
 
 ### :fire: &nbsp; How to Use &nbsp; :fire:
 
+#### CLI Mode :
+`onex -h` or `onex help` for help.
+
+Options :
+- `onex install [tool_name]` install any tool.
+- `onex -i [tool_name]` install any tool.
+- `onex search [tool_name]` search any tool.
+- `onex -s [tool_name]` search any tool.
+- `onex list` list all tools.
+- `onex list -a` list all tools.
+- `onex -l` list all tools.
+- `onex -l -a` list all tools.
+- `onex help` get help.
+- `onex -h` get help.
+
+#### Menu Mode :
+
 Enter a Number for a specific output:
 - (1) : To show all available tools and type the number of a tool which you want to install.
 - (2) : To show tools category.
@@ -44,10 +62,6 @@ Enter a Number for a specific output:
 - (5) : To exit the tool.
 
 <br/>
-
-***Now onex is installed successfully. To run this tool type `onex` in your terminal.***
-
-Type `onex` from anywhere in your terminal to open onex.
 
 ------------------------------------------------------------------------
 
