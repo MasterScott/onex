@@ -54,6 +54,8 @@ Options :
 
 #### Menu Mode :
 
+`onex start` to start onex menu mode.
+
 Enter a Number for a specific output:
 - (1) : To show all available tools and type the number of a tool which you want to install.
 - (2) : To show tools category.
