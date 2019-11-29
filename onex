@@ -894,6 +894,53 @@ cli_category() {
   done
 }
 
+# update process
+# removing old one
+if [ -e $bin/onex ]; then
+  if [ -d $dir/onex ]; then
+    if [ $sudo ]; then
+      $sudo rm -rf $bin/onex
+      $sudo rm -rf $dir/onex
+    else
+      rm -rf $bin/onex
+      rm -rf $dir/onex
+    fi
+  fi
+fi
+
+# update process
+update_process() {
+  # removing old one
+  if [ -e $bin/onex ]; then
+    if [ -d $conf_dir/onex ]; then
+      if [ $sudo ]; then
+        $sudo rm -rf $bin/onex
+        $sudo rm -rf $conf_dir/onex
+      else
+        rm -rf $bin/onex
+        rm -rf $conf_dir/onex
+      fi
+    fi
+  fi
+  # updating onex
+  if [ -e $home/onex/onex ]; then
+    if [ $sudo ]; then
+      $sudo mv -v $home/onex/onex $bin
+      $sudo chmod +x $bin/onex
+    else
+      mv -v $home/onex/onex $bin
+      chmod +x $bin/onex
+    fi
+  fi
+  if [ -d $home/onex ]; then
+    if [ $sudo ]; then
+    $sudo mv -v $home/onex $conf_dir
+    else
+      mv -v $home/onex $conf_dir
+    fi
+  fi
+}
+
 # update onex function
 cli_update() {
   # check user is online or not
@@ -904,29 +951,29 @@ cli_update() {
     if [ -e $bin/git ]; then
       if [ $sudo ]; then
         $sudo git clone https://github.com/Rajkumrdusad/onex.git ~/onex
-        $sudo sh ~/onex/install
+        update_process
       else
         git clone https://github.com/Rajkumrdusad/onex.git ~/onex
-        sh ~/onex/install
+        update_process
        fi
     else
       if [ $sudo ]; then
         $sudo $pac install git -y
         $sudo git clone https://github.com/Rajkumrdusad/onex.git ~/onex
-        $sudo sh ~/onex/install
+        update_process
       else
         $pac install git -y
         git clone https://github.com/Rajkumrdusad/onex.git ~/onex
-        sh ~/onex/install
+        update_process
       fi
     fi
-    echo "\007\033[01;32monex updated !!\033[00m"
+    echo "\007\033[00m'onex' \033[01;32mupdated successfully !!\033[00m"
   else
     echo "\007\033[01;31mSorry \033[00m: you are \033[01;31moffline \033[00m!!\033[00m"
   fi
 }
 
-# cli install tool
+# cli install process
 install_process() {
   # get tool alias name
   tool_name=`echo $1 | cut -d"|" -f1`
@@ -1187,10 +1234,12 @@ cli_install() {
     install_process $get_tool_data
   else
     echo "\007\033[01;31mSorry \033[00m: '$1' \033[01;31mtool not found !!\033[00m"
-    similar=`grep -i "^$1" $tools_data | cut -d"|" -f1 | tr ' ' '@'`
+    similar=`grep -i "^$1" $tools_data | cut -d"|" -f1`
     if [ "$similar" ]; then
-      echo "\033[01;34mdid you mean ?\033[00m"
-      grep -i "^$1" $tools_data | cut -d"|" -f1 | tr ' ' '@'
+      echo "\033[01;34mDid you mean\033[00m:"
+      echo -n "\033[01;32m"
+      grep -i "^$1" $tools_data | cut -d"|" -f1
+      echo -n "\033[00m"
     fi
   fi
 }
@@ -1198,10 +1247,10 @@ cli_install() {
 # search tool
 cli_search() {
   # get tools data
-  similar=`grep -i "^$1" $tools_data | cut -d"|" -f1 | tr ' ' '@'`
+  similar=`grep -i "^$1" $tools_data | cut -d"|" -f1`
   if [ "$similar" ]; then
     echo -n "\033[01;32m"
-    grep -i "^$1" $tools_data | cut -d"|" -f1 | tr ' ' '@'
+    grep -i "^$1" $tools_data | cut -d"|" -f1
     echo -n "\033[00m"
   fi
 }

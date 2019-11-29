@@ -22,9 +22,9 @@ elif [ -d /data/data/com.termux/files/usr/bin ]; then
 fi
 
 if [ -d /data/data/com.termux/files/usr/etc ]; then
-  dir="/data/data/com.termux/files/usr/etc"
+  conf_dir="/data/data/com.termux/files/usr/etc"
 elif [ -d /etc ]; then
-  dir="/etc"
+  conf_dir="/etc"
 fi
 
 if [ -e /bin/apt ]; then
@@ -162,13 +162,13 @@ fi
 
 # removing old one
 if [ -e $bin/onex ]; then
-  if [ -d $dir/onex ]; then
+  if [ -d $conf_dir/onex ]; then
     if [ $sudo ]; then
       $sudo rm -rf $bin/onex
-      $sudo rm -rf $dir/onex
+      $sudo rm -rf $conf_dir/onex
     else
       rm -rf $bin/onex
-      rm -rf $dir/onex
+      rm -rf $conf_dir/onex
     fi
   fi
 fi
@@ -204,21 +204,22 @@ else
   fi
   if [ -d onex ]; then
     if [ $sudo ]; then
-    $sudo mv -v onex $dir
+    $sudo mv -v onex $conf_dir
     else
-      mv -v onex $dir
+      mv -v onex $conf_dir
     fi
   fi
 fi
 
 # check onex is installed or not
 if [ -e $bin/onex ]; then
-  if [ -d $dir/onex ]; then
+  if [ -d $conf_dir/onex ]; then
     clear
     echo "$logo"
     echo " \033[01;33mOnex \033[01;32mis installed successfully !!"
     echo " \033[01;32mfor more information type \033[01;33m'onex -h'\033[00m"
   else
+    clear
     echo "$logo"
     echo " \033[01;31mSorry \033[00m: onex \033[01;31mis not installed !!"
     echo " \033[01;32mPlease try again\033[00m"
