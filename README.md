@@ -6,8 +6,9 @@ onex can install any tools jus single click. use `onex install [tool_name]` comm
 
 <br>
 <p align="center">
-<img width="80%" src="https://github.com/Rajkumrdusad/onex/blob/master/doc/logo.png"/>
-<img width="80%" src="https://github.com/Rajkumrdusad/onex/blob/master/doc/onex.png"/>
+<img width="60%" src="https://github.com/Rajkumrdusad/onex/blob/master/doc/logo.png"/>
+<br>
+<img width="60%" src="https://github.com/Rajkumrdusad/onex/blob/master/doc/onex.png"/>
 </p>
 
 ------------------------------------------------------------------------
