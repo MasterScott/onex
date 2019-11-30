@@ -22,8 +22,6 @@ php|php|programming_language|null|package_manager|null
 
 nmap|nmap|information_gathering,vulnerability_scanner|null|package_manager|null
 
-setoolkit|setoolkit.sh|information_gathering,sniffing_spoofing|https://raw.githubusercontent.com/Hax4us/setoolkit/master/setoolkit.sh|curl|curl
-
 hydra|hydra|stress_testing,password_attack|null|package_manager|null
 
 sqlmap|sqlmap|information_gathering,vulnerability_scanner,web_hacking,exploitation_tools|https://github.com/sqlmapproject/sqlmap|git|python,git
@@ -48,7 +46,7 @@ sAINT|sAINT|null|https://github.com/tiagorlampert/sAINT.git|git|git
 
 sqliv|sqliv|vulnerability_scanner,web_hacking|https://github.com/Hadesy2k/sqliv.git|git|python,git
 
-theHarvester|theHarvester|null|https://github.com/laramies/theHarvester.git|git|python,git
+theHarvester|theHarvester|information_gathering|https://github.com/laramies/theHarvester.git|git|python,git
 
 trape|trape|ip_tracking|https://github.com/boxug/trape.git|git|python,git
 
@@ -146,7 +144,7 @@ KnockMail|KnockMail|sniffing_spoofing|https://github.com/4w4k3/KnockMail.git|git
 
 Spammer-Email|Spammer-Email|sniffing_spoofing|https://github.com/p4kl0nc4t/Spammer-Email.git|git|python,git
 
-sslstrip|sslstrip|sniffing_spoofing|https://github.com/moxie0/sslstrip.git|git|python,git
+sslstrip|sslstrip|information_gathering,sniffing_spoofing|https://github.com/moxie0/sslstrip.git|git|python,git
 
 pyPISHER|pyPISHER|sniffing_spoofing|https://github.com/Renato-Silva/pyPISHER.git|git|python,git
 
@@ -390,7 +388,9 @@ routersploit|routersploit|vulnerability_scanner,exploitation_tools|https://githu
 
 SCANNER-INURLBR|SCANNER-INURLBR|web_hacking|https://github.com/googleinurl/SCANNER-INURLBR.git|git|php,git
 
-social-engineer-toolkit|social-engineer-toolkit|password_attack,sniffing_spoofing|https://github.com/trustedsec/social-engineer-toolkit.git|git|python,git
+social-engineer-toolkit|social-engineer-toolkit|information_gathering,password_attack,sniffing_spoofing|https://github.com/trustedsec/social-engineer-toolkit.git|git|python,git
+
+SET|social-engineer-toolkit|information_gathering,password_attack,sniffing_spoofing|https://github.com/trustedsec/social-engineer-toolkit.git|git|python,git
 
 Breacher|Breacher|web_hacking|https://github.com/UltimateHackers/Breacher.git|git|python,git
 
@@ -448,7 +448,7 @@ hulk|hulk|ddos|https://github.com/grafov/hulk.git|git|python,git
 
 netattack2|netattack2|wireless_testing|https://github.com/chrizator/netattack2.git|git|python,git
 
-nikto|nikto|null|https://github.com/sullo/nikto.git|git|perl,git
+nikto|nikto|information_gathering|https://github.com/sullo/nikto.git|git|perl,git
 
 pybluez|pybluez|null|https://github.com/karulis/pybluez.git|git|python,git
 
@@ -477,6 +477,72 @@ Th3inspector|Th3inspector|null|https://github.com/Moham3dRiahi/Th3inspector.git|
 Tool-X|Tool-X|null|https://github.com/Rajkumrdusad/Tool-X.git|git|python,git
 
 RED_HAWK|RED_HAWK|information_gathering,vulnerability_scanner|https://github.com/Tuhinshubhra/RED_HAWK.git|git|php,git
+
+arp-scan|arp-scan|information_gathering|https://github.com/royhills/arp-scan.git|git|clang,gcc,git
+
+apt2|apt2|information_gathering|https://github.com/MooseDojo/apt2.git|git|python,git
+
+Automater|TekDefense-Automater|information_gathering|https://github.com/1aN0rmus/TekDefense-Automater.git|git|python,git
+
+bing-ip2hosts|bing-ip2hosts|information_gathering|https://github.com/urbanadventurer/bing-ip2hosts.git|git|git
+
+braa|braa|information_gathering|https://github.com/mteg/braa.git|git|clang,gcc,git
+
+cdpsnarf|cdpsnarf|information_gathering|https://github.com/Zapotek/cdpsnarf.git|git|clang,gcc,git
+
+dmitry|dmitry|information_gathering|https://github.com/jaygreig86/dmitry.git|git|clang,gcc,git
+
+dnsenum|dnsenum|information_gathering|https://github.com/fwaeytens/dnsenum.git|git|perl,git
+
+dnsmap|dnsmap|information_gathering|https://github.com/makefu/dnsmap.git|git|clang,gcc,git
+
+dnsrecon|dnsrecon|information_gathering|https://github.com/darkoperator/dnsrecon.git|git|python,ruby,git
+
+dotdotpwn|dotdotpwn|information_gathering|https://github.com/wireghoul/dotdotpwn.git|git|perl,git
+
+enum4linux|enum4linux|information_gathering|https://github.com/portcullislabs/enum4linux.git|git|perl,git
+
+EyeWitness|EyeWitness|information_gathering|https://github.com/FortyNorthSecurity/EyeWitness.git|git|python,git
+
+faraday|faraday|information_gathering|https://github.com/infobyte/faraday.git|git|python,git
+
+fierce|fierce|information_gathering|https://github.com/mschwager/fierce.git|git|python,git
+
+firewalk|firewalk|information_gathering|https://gitlab.com/kalilinux/packages/firewalk.git|git|clang,gcc,git
+
+fragroute|fragroute|information_gathering|https://gitlab.com/kalilinux/packages/fragroute.git|git|clang,gcc,git
+
+fragrouter|fragrouter|information_gathering|https://gitlab.com/kalilinux/packages/fragrouter.git|git|clang,gcc,git
+
+ghost-phisher|ghost-phisher|information_gathering|https://github.com/savio-code/ghost-phisher.git|git|python,git
+
+golismero|golismero|information_gathering|https://github.com/golismero/golismero.git|git|python,git
+
+goofile|goofile|information_gathering|https://gitlab.com/kalilinux/packages/goofile.git|git|python,git
+
+InSpy|InSpy|information_gathering|https://github.com/leapsecurity/InSpy.git|git|python,git
+
+intrace|intrace|information_gathering|https://github.com/robertswiecki/intrace.git|git|clang,gcc,git
+
+iSMTP|ipwn|information_gathering|https://github.com/altjx/ipwn.git|git|python,git
+
+masscan|masscan|information_gathering|https://github.com/robertdavidgraham/masscan.git|git|clang,gcc,git
+
+osrframework|osrframework|information_gathering|https://github.com/i3visio/osrframework.git|git|python,git
+
+Parsero|Parsero|information_gathering|https://github.com/behindthefirewalls/Parsero.git|git|python,git
+
+smbmap|smbmap|information_gathering|https://github.com/ShawnDEvans/smbmap.git|git|python,git
+
+sslcaudit|sslcaudit|information_gathering|https://github.com/abbbe/sslcaudit.git|git|clang,gcc,git
+
+sslsplit|sslsplit|information_gathering|https://github.com/droe/sslsplit.git|git|clang,gcc,git
+
+sslyze|sslyze|information_gathering|https://github.com/iSECPartners/sslyze.git|git|python,git
+
+Sublist3r|Sublist3r|information_gathering|https://github.com/aboul3la/Sublist3r.git|git|python,git
+
+thc-ipv6|thc-ipv6|information_gathering|https://github.com/vanhauser-thc/thc-ipv6.git|git|clang,gcc,git
 
 termux-ubuntu|termux-ubuntu|null|https://github.com/Neo-Oli/termux-ubuntu.git|git|git
 
