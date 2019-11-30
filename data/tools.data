@@ -20,15 +20,15 @@ golang|golang|programming_language|null|package_manager|null
 nodejs|nodejs|programming_language|null|package_manager|null
 php|php|programming_language|null|package_manager|null
 
-nmap|nmap|information_gathering|null|package_manager|null
+nmap|nmap|information_gathering,vulnerability_scanner|null|package_manager|null
 
-setoolkit|setoolkit.sh|information_gathering|https://raw.githubusercontent.com/Hax4us/setoolkit/master/setoolkit.sh|curl|curl
+setoolkit|setoolkit.sh|information_gathering,sniffing_spoofing|https://raw.githubusercontent.com/Hax4us/setoolkit/master/setoolkit.sh|curl|curl
 
 hydra|hydra|stress_testing,password_attack|null|package_manager|null
 
-sqlmap|sqlmap|null|https://github.com/sqlmapproject/sqlmap|git|python,git
+sqlmap|sqlmap|information_gathering,vulnerability_scanner,web_hacking,exploitation_tools|https://github.com/sqlmapproject/sqlmap|git|python,git
 
-admin-panel-finder|admin-panel-finder|null|https://github.com/bdblackhat/admin-panel-finder.git|git|python,git
+admin-panel-finder|admin-panel-finder|web_hacking|https://github.com/bdblackhat/admin-panel-finder.git|git|python,git
 
 credmap|credmap|null|https://github.com/lightos/credmap.git|git|python,git
 
@@ -46,11 +46,11 @@ Nethunter-In-Termux|Nethunter-In-Termux|null|https://github.com/Hax4us/Nethunter
 
 sAINT|sAINT|null|https://github.com/tiagorlampert/sAINT.git|git|git
 
-sqliv|sqliv|null|https://github.com/Hadesy2k/sqliv.git|git|python,git
+sqliv|sqliv|vulnerability_scanner,web_hacking|https://github.com/Hadesy2k/sqliv.git|git|python,git
 
 theHarvester|theHarvester|null|https://github.com/laramies/theHarvester.git|git|python,git
 
-trape|trape|null|https://github.com/boxug/trape.git|git|python,git
+trape|trape|ip_tracking|https://github.com/boxug/trape.git|git|python,git
 
 uidsploit|uidsploit|null|https://github.com/siruidops/uidsploit.git|git|git
 
@@ -60,13 +60,13 @@ Vegile|Vegile|null|https://github.com/Screetsec/Vegile.git|git|git
 
 weevely3|weevely3|null|https://github.com/epinna/weevely3.git|git|python,git
 
-WiFi-Pumpkin|WiFi-Pumpkin|null|https://github.com/P0cL4bs/WiFi-Pumpkin.git|git|python,git
+WiFi-Pumpkin|WiFi-Pumpkin|wireless_testing|https://github.com/P0cL4bs/WiFi-Pumpkin.git|git|python,git
 
-WifiBruteCrack|WifiBruteCrack|null|https://github.com/cinquemb/WifiBruteCrack.git|git|python,git
+WifiBruteCrack|WifiBruteCrack|wireless_testing|https://github.com/cinquemb/WifiBruteCrack.git|git|python,git
 
-wirespy|wirespy|null|https://github.com/AresS31/wirespy.git|git|git
+wirespy|wirespy|wireless_testing|https://github.com/AresS31/wirespy.git|git|git
 
-wpscan|wpscan|null|https://github.com/wpscanteam/wpscan.git|git|ruby,git
+wpscan|wpscan|information_gathering,vulnerability_scanner,web_hacking|https://github.com/wpscanteam/wpscan.git|git|ruby,git
 
 Zerodoor|Zerodoor|null|https://github.com/Souhardya/Zerodoor.git|git|python,git
 
@@ -74,13 +74,13 @@ zarp|zarp|null|https://github.com/hatRiot/zarp.git|git|python,git
 
 zambie|zambie|null|https://github.com/zanyarjamal/zambie.git|git|python,git
 
-ExploitOnCLI|ExploitOnCLI|null|https://github.com/r00tmars/ExploitOnCLI.git|git|php,git
+ExploitOnCLI|ExploitOnCLI|exploitation_tools|https://github.com/r00tmars/ExploitOnCLI.git|git|php,git
 
-xerosploit|xerosploit|null|https://github.com/LionSec/xerosploit.git|git|python,git
+xerosploit|xerosploit|exploitation_tools|https://github.com/LionSec/xerosploit.git|git|python,git
 
 MyServer|MyServer|web_server|https://github.com/Rajkumrdusad/MyServer.git|git|python,git
 
-WAScan|WAScan|null|https://github.com/m4ll0k/WAScan.git|git|python,git
+WAScan|WAScan|information_gathering,vulnerability_scanner,web_hacking|https://github.com/m4ll0k/WAScan.git|git|python,git
 
 AutoPixieWps|AutoPixieWps|null|https://github.com/nxxxu/AutoPixieWps.git|git|python,git
 
@@ -94,65 +94,67 @@ elpscrk|elpscrk|null|https://github.com/D4Vinci/elpscrk.git|git|python,git
 
 ezsploit|ezsploit|null|https://github.com/rand0m1ze/ezsploit.git|git|git
 
-DSSS|DSSS|null|https://github.com/stamparm/DSSS.git|git|python,git
+DSSS|DSSS|vulnerability_scanner|https://github.com/stamparm/DSSS.git|git|python,git
 
-EvilURL|EvilURL|null|https://github.com/UndeadSec/EvilURL.git|git|python,git
+EvilURL|EvilURL|information_gathering|https://github.com/UndeadSec/EvilURL.git|git|python,git
 
-OSIF|OSIF|null|https://github.com/ciku370/OSIF.git|git|python,git
+OSIF|OSIF|information_gathering|https://github.com/ciku370/OSIF.git|git|python,git
 
-CMSmap|CMSmap|null|https://github.com/Dionach/CMSmap.git|git|python,git
+CMSmap|CMSmap|information_gathering|https://github.com/Dionach/CMSmap.git|git|python,git
 
-XSStrike|XSStrike|null|https://github.com/s0md3v/XSStrike.git|git|python,git
+XSStrike|XSStrike|information_gathering,web_hacking|https://github.com/s0md3v/XSStrike.git|git|python,git
 
-doork|doork|null|https://github.com/AeonDave/doork.git|git|python,git
+doork|doork|information_gathering,web_hacking|https://github.com/AeonDave/doork.git|git|python,git
 
-sqlscan|sqlscan|null|https://github.com/Cvar1984/sqlscan.git|git|php,git
+sqlscan|sqlscan|information_gathering,vulnerability_scanner,web_hacking|https://github.com/Cvar1984/sqlscan.git|git|php,git
 
-sqlmate|sqlmate|null|https://github.com/s0md3v/sqlmate.git|git|python,git
+sqlmate|sqlmate|information_gathering,vulnerability_scanner,web_hacking|https://github.com/s0md3v/sqlmate.git|git|python,git
 
-rang3r|rang3r|null|https://github.com/floriankunushevci/rang3r.git|git|python,git
+rang3r|rang3r|vulnerability_scanner|https://github.com/floriankunushevci/rang3r.git|git|python,git
 
-Striker|Striker|null|https://github.com/s0md3v/Striker.git|git|python,git
+Striker|Striker|vulnerability_scanner|https://github.com/s0md3v/Striker.git|git|python,git
 
-Xshell|Xshell|null|https://github.com/Manisso/Xshell.git|git|git
+Xshell|Xshell|vulnerability_scanner,web_hacking|https://github.com/Manisso/Xshell.git|git|git
 
-SH33LL|SH33LL|null|https://github.com/LOoLzeC/SH33LL.git|git|python,git
+SH33LL|SH33LL|vulnerability_scanner,web_hacking|https://github.com/LOoLzeC/SH33LL.git|git|python,git
 
-blackbox|blackbox|null|https://github.com/jothatron/blackbox.git|git|python,git
+blackbox|blackbox|vulnerability_scanner,exploitation_tools|https://github.com/jothatron/blackbox.git|git|python,git
 
-Planetwork-DDOS|Planetwork-DDOS|ddos|https://github.com/Hydra7/Planetwork-DDOS.git|git|python,git
+Planetwork-DDOS|Planetwork-DDOS|ddos,stress_testing|https://github.com/Hydra7/Planetwork-DDOS.git|git|python,git
 
-Hashzer|Hashzer|null|https://github.com/Anb3rSecID/Hashzer.git|git|python,git
+cupp|cupp|password_attack|https://github.com/Mebus/cupp.git|git|python,git
 
-hasher|hasher|null|https://github.com/CiKu370/hasher.git|git|python,git
+Hashzer|Hashzer|password_attack|https://github.com/Anb3rSecID/Hashzer.git|git|python,git
 
-hash-generator|hash-generator|null|https://github.com/CiKu370/hash-generator.git|git|python,git
+hasher|hasher|password_attack|https://github.com/CiKu370/hasher.git|git|python,git
 
-hasherdotid|hasherdotid|null|https://github.com/galauerscrew/hasherdotid.git|git|python,git
+hash-generator|hash-generator|password_attack|https://github.com/CiKu370/hash-generator.git|git|python,git
 
-webdav|webdav|null|https://github.com/hacdias/webdav.git|git|golang,git
+hasherdotid|hasherdotid|password_attack|https://github.com/galauerscrew/hasherdotid.git|git|python,git
 
-WP-plugin-scanner|WP-plugin-scanner|null|https://github.com/mintobit/WP-plugin-scanner.git|git|python,git
+webdav|webdav|web_hacking|https://github.com/hacdias/webdav.git|git|golang,git
 
-ATSCAN|ATSCAN|null|https://github.com/AlisamTechnology/ATSCAN.git|git|git
+WP-plugin-scanner|WP-plugin-scanner|web_hacking|https://github.com/mintobit/WP-plugin-scanner.git|git|python,git
 
-shellnoob|shellnoob|null|https://github.com/reyammer/shellnoob.git|git|python,git
+ATSCAN|ATSCAN|exploitation_tools|https://github.com/AlisamTechnology/ATSCAN.git|git|git
+
+shellnoob|shellnoob|exploitation_tools|https://github.com/reyammer/shellnoob.git|git|python,git
 
 jboss-autopwn|jboss-autopwn|null|https://github.com/SpiderLabs/jboss-autopwn.git|git|git
 
-KnockMail|KnockMail|null|https://github.com/4w4k3/KnockMail.git|git|python,git
+KnockMail|KnockMail|sniffing_spoofing|https://github.com/4w4k3/KnockMail.git|git|python,git
 
-Spammer-Email|Spammer-Email|null|https://github.com/p4kl0nc4t/Spammer-Email.git|git|python,git
+Spammer-Email|Spammer-Email|sniffing_spoofing|https://github.com/p4kl0nc4t/Spammer-Email.git|git|python,git
 
-sslstrip|sslstrip|null|https://github.com/moxie0/sslstrip.git|git|python,git
+sslstrip|sslstrip|sniffing_spoofing|https://github.com/moxie0/sslstrip.git|git|python,git
 
-pyPISHER|pyPISHER|null|https://github.com/Renato-Silva/pyPISHER.git|git|python,git
+pyPISHER|pyPISHER|sniffing_spoofing|https://github.com/Renato-Silva/pyPISHER.git|git|python,git
 
 torghost|torghost|null|https://github.com/susmithHCK/torghost.git|git|python,git
 
 Parat|Parat|null|https://github.com/micle-fm/Parat.git|git|python,git
 
-BruteX|BruteX|null|https://github.com/1N3/BruteX.git|git|python,git
+BruteX|BruteX|web_hacking|https://github.com/1N3/BruteX.git|git|python,git
 
 trackout|trackout|information_gathering,ip_tracking|https://github.com/abaykan/trackout.git|git|python,git
 
@@ -160,9 +162,9 @@ IP-FY|IP-FY|information_gathering,ip_tracking|https://github.com/T4P4N/IP-FY.git
 
 IP-Tracer|IP-Tracer|information_gathering,ip_tracking|https://github.com/Rajkumrdusad/IP-Tracer|git|php,git
 
-fluxion|fluxion|null|https://github.com/FluxionNetwork/fluxion.git|git|git
+fluxion|fluxion|wireless_testing|https://github.com/FluxionNetwork/fluxion.git|git|git
 
-websploit|websploit|null|https://github.com/websploit/websploit.git|git|python,git
+websploit|websploit|web_hacking,exploitation_tools|https://github.com/websploit/websploit.git|git|python,git
 
 wafw00f|wafw00f|null|https://github.com/EnableSecurity/wafw00f.git|git|python,git
 
@@ -180,7 +182,7 @@ GoblinWordGenerator|GoblinWordGenerator|null|https://github.com/UndeadSec/Goblin
 
 lscript|lscript|null|https://github.com/arismelachroinos/lscript.git|git|git
 
-wifiphisher|wifiphisher|null|https://github.com/wifiphisher/wifiphisher.git|git|python,git
+wifiphisher|wifiphisher|wireless_testing|https://github.com/wifiphisher/wifiphisher.git|git|python,git
 
 morpheus|morpheus|null|https://github.com/r00t-3xp10it/morpheus.git|git|python,git
 
@@ -210,7 +212,7 @@ pupy|pupy|null|https://github.com/n1nj4sec/pupy|git|python,git
 
 zirikatu|zirikatu|null|https://github.com/pasahitz/zirikatu.git|git|git
 
-Hash-Buster|Hash-Buster|null|https://github.com/UltimateHackers/Hash-Buster.git|git|python,git
+Hash-Buster|Hash-Buster|password_attack|https://github.com/UltimateHackers/Hash-Buster.git|git|python,git
 
 TheFatRat|TheFatRat|null|https://github.com/Screetsec/TheFatRat.git|git|git
 
@@ -224,7 +226,7 @@ koadic|koadic|null|https://github.com/zerosum0x0/koadic.git|git|python,git
 
 Empire|Empire|null|https://github.com/EmpireProject/Empire.git|git|git
 
-Meterpreter_Paranoid_Mode-SSL|Meterpreter_Paranoid_Mode-SSL|null|https://github.com/r00t-3xp10it/Meterpreter_Paranoid_Mode-SSL.git|git|git
+Meterpreter_Paranoid_Mode-SSL|Meterpreter_Paranoid_Mode-SSL|exploitation_tools|https://github.com/r00t-3xp10it/Meterpreter_Paranoid_Mode-SSL.git|git|git
 
 Dr0p1t-Framework|Dr0p1t-Framework|null|https://github.com/D4Vinci/Dr0p1t-Framework.git|git|python,git
 
@@ -232,7 +234,7 @@ leviathan|leviathan|null|https://github.com/tearsecurity/leviathan.git|git|pytho
 
 FakeImageExploiter|FakeImageExploiter|null|https://github.com/r00t-3xp10it/FakeImageExploiter.git|git|git
 
-airgeddon|airgeddon|null|https://github.com/v1s1t0r1sh3r3/airgeddon.git|git|git
+airgeddon|airgeddon|wireless_testing|https://github.com/v1s1t0r1sh3r3/airgeddon.git|git|git
 
 avet|avet|null|https://github.com/govolution/avet.git|git|clang,gcc,git
 
@@ -250,7 +252,7 @@ bleachbit|bleachbit|null|https://github.com/bleachbit/bleachbit.git|git|python,g
 
 Findsploit|Findsploit|null|https://github.com/1N3/Findsploit.git|git|git
 
-SocialBox|SocialBox|null|https://github.com/TunisianEagles/SocialBox.git|git|git
+SocialBox|SocialBox|sniffing_spoofing|https://github.com/TunisianEagles/SocialBox.git|git|git
 
 LITESPAM|LITESPAM|null|https://github.com/4L13199/LITESPAM.git|git|php,git
 
@@ -272,7 +274,7 @@ Leaked|Leaked|null|https://github.com/GitHackTools/Leaked.git|git|python,git
 
 Auxscan|Auxscan|null|https://github.com/Gameye98/Auxscan.git|git|python,git
 
-Infoga|Infoga|null|https://github.com/m4ll0k/Infoga.git|git|python,git
+Infoga|Infoga|information_gathering|https://github.com/m4ll0k/Infoga.git|git|python,git
 
 noisy|noisy|null|https://github.com/1tayH/noisy.git|git|python,git
 
@@ -296,19 +298,19 @@ fuckshitup|fuckshitup|null|https://github.com/Smaash/fuckshitup.git|git|php,git
 
 Stitch|Stitch|null|https://github.com/nathanlopez/Stitch.git|git|python,git
 
-roxysploit|roxysploit|null|https://github.com/andyvaikunth/roxysploit.git|git|python,git
+roxysploit|roxysploit|exploitation_tools|https://github.com/andyvaikunth/roxysploit.git|git|python,git
 
 PiDense|PiDense|null|https://github.com/WiPi-Hunter/PiDense.git|git|python,git
 
 TorStat|TorStat|null|https://github.com/s0cket7/TorStat.git|git|python,git
 
-wifigod|wifigod|null|https://github.com/blackholesec/wifigod.git|git|python,git
+wifigod|wifigod|wireless_testing|https://github.com/blackholesec/wifigod.git|git|python,git
 
 EggShell|EggShell|null|https://github.com/neoneggplant/EggShell.git|git|python,git
 
-wifite2|wifite2|null|https://github.com/derv82/wifite2.git|git|python,git
+wifite2|wifite2|wireless_testing|https://github.com/derv82/wifite2.git|git|python,git
 
-smap|smap|null|https://github.com/s0cket7/smap|git|python,git
+smap|smap|web_hacking|https://github.com/s0cket7/smap|git|python,git
 
 CrawlBox|CrawlBox|null|https://github.com/abaykan/CrawlBox.git|git|python,git
 
@@ -328,11 +330,11 @@ HT-WPS-Breaker|HT-WPS-Breaker|null|https://github.com/SilentGhostX/HT-WPS-Breake
 
 Gemail-Hack|Gemail-Hack|null|https://github.com/Ha3MrX/Gemail-Hack.git|git|python,git
 
-IPGeoLocation|IPGeoLocation|null|https://github.com/maldevel/IPGeoLocation.git|git|python,git
+IPGeoLocation|IPGeoLocation|ip_tracking|https://github.com/maldevel/IPGeoLocation.git|git|python,git
 
-WebXploiter|WebXploiter|null|https://github.com/a0xnirudh/WebXploiter.git|git|python,git
+WebXploiter|WebXploiter|web_hacking,exploitation_tools|https://github.com/a0xnirudh/WebXploiter.git|git|python,git
 
-WhatWeb|WhatWeb|null|https://github.com/urbanadventurer/WhatWeb.git|git|python,git
+WhatWeb|WhatWeb|web_hacking|https://github.com/urbanadventurer/WhatWeb.git|git|python,git
 
 EasY_HaCk|EasY_HaCk|null|https://github.com/sabri-zaki/EasY_HaCk.git|git|python,git
 
@@ -348,7 +350,7 @@ ReverseAPK|ReverseAPK|null|https://github.com/1N3/ReverseAPK.git|git|git
 
 nodexp|nodexp|null|https://github.com/esmog/nodexp.git|git|python,git
 
-kickthemout|kickthemout|null|https://github.com/k4m4/kickthemout.git|git|python,git
+kickthemout|kickthemout|wireless_testing|https://github.com/k4m4/kickthemout.git|git|python,git
 
 subscraper|subscraper|null|https://github.com/m8r0wn/subscraper.git|git|python,git
 
@@ -362,15 +364,15 @@ Trity|Trity|null|https://github.com/toxic-ig/Trity.git|git|python,git
 
 Lazymux|Lazymux|null|https://github.com/Gameye98/Lazymux.git|git|python,git
 
-aircrack-ng|aircrack-ng|null|null|package_manager|null
+aircrack-ng|aircrack-ng|wireless_testing|null|package_manager|null
 
-netattack|netattack|null|https://github.com/chrizator/netattack.git|git|python,git
+netattack|netattack|wireless_testing|https://github.com/chrizator/netattack.git|git|python,git
 
 pydictor|pydictor|null|https://github.com/LandGrey/pydictor.git|git|python,git
 
 onioff|onioff|null|https://github.com/k4m4/onioff.git|git|python,git
 
-A-Rat|A-Rat|null|https://github.com/Xi4u7/A-Rat.git|git|python,git
+A-Rat|A-Rat|exploitation_tools|https://github.com/Xi4u7/A-Rat.git|git|python,git
 
 peepdf|peepdf|null|https://github.com/jesparza/peepdf.git|git|python,git
 
@@ -380,19 +382,19 @@ angryFuzzer|angryFuzzer|null|https://github.com/ihebski/angryFuzzer.git|git|pyth
 
 PyBozoCrack|PyBozoCrack|null|https://github.com/ikkebr/PyBozoCrack.git|git|python,git
 
-recon-ng|recon-ng|null|https://github.com/lanmaster53/recon-ng.git|git|python,git
+recon-ng|recon-ng|information_gathering|https://github.com/lanmaster53/recon-ng.git|git|python,git
 
-ReconDog|ReconDog|null|https://github.com/UltimateHackers/ReconDog.git|git|python,git
+ReconDog|ReconDog|information_gathering|https://github.com/UltimateHackers/ReconDog.git|git|python,git
 
-routersploit|routersploit|null|https://github.com/reverse-shell/routersploit.git|git|python,git
+routersploit|routersploit|vulnerability_scanner,exploitation_tools|https://github.com/reverse-shell/routersploit.git|git|python,git
 
-SCANNER-INURLBR|SCANNER-INURLBR|null|https://github.com/googleinurl/SCANNER-INURLBR.git|git|php,git
+SCANNER-INURLBR|SCANNER-INURLBR|web_hacking|https://github.com/googleinurl/SCANNER-INURLBR.git|git|php,git
 
-social-engineer-toolkit|social-engineer-toolkit|null|https://github.com/trustedsec/social-engineer-toolkit.git|git|python,git
+social-engineer-toolkit|social-engineer-toolkit|password_attack,sniffing_spoofing|https://github.com/trustedsec/social-engineer-toolkit.git|git|python,git
 
-Breacher|Breacher|null|https://github.com/UltimateHackers/Breacher.git|git|python,git
+Breacher|Breacher|web_hacking|https://github.com/UltimateHackers/Breacher.git|git|python,git
 
-torshammer|torshammer|null|https://github.com/dotfighter/torshammer.git|git|python,git
+torshammer|torshammer|stress_testing|https://github.com/dotfighter/torshammer.git|git|python,git
 
 termux-lazysqlmap|termux-lazysqlmap|null|https://github.com/verluchie/termux-lazysqlmap.git|git|git
 
@@ -402,21 +404,21 @@ webpwn3r|webpwn3r|null|https://github.com/zigoo0/webpwn3r.git|git|python,git
 
 weeman|weeman|null|https://github.com/evait-security/weeman.git|git|python,git
 
-Brutal|Brutal|null|https://github.com/Screetsec/Brutal.git|git|git
+Brutal|Brutal|exploitation_tools|https://github.com/Screetsec/Brutal.git|git|git
 
 wfdroid-termux|wfdroid-termux|null|https://github.com/bytezcrew/wfdroid-termux.git|git|git
 
-wifi-hacker|wifi-hacker|null|https://github.com/esc0rtd3w/wifi-hacker.git|git|git
+wifi-hacker|wifi-hacker|wireless_testing|https://github.com/esc0rtd3w/wifi-hacker.git|git|git
 
-slowloris|slowloris|null|https://github.com/gkbrk/slowloris.git|git|python,git
+slowloris|slowloris|ddos,stress_testing|https://github.com/gkbrk/slowloris.git|git|python,git
 
-XPL-SEARCH|XPL-SEARCH|null|https://github.com/r00tmars/XPL-SEARCH.git|git|php,git
+XPL-SEARCH|XPL-SEARCH|web_hacking|https://github.com/r00tmars/XPL-SEARCH.git|git|php,git
 
 FBUPv2.0|FBUPv2.0|null|https://github.com/mrSilent0598/FBUPv2.0.git|git|python,git
 
-D-TECT|D-TECT|null|https://github.com/shawarkhanethicalhacker/D-TECT.git|git|python,git
+D-TECT|D-TECT|information_gathering,vulnerability_scanner|https://github.com/shawarkhanethicalhacker/D-TECT.git|git|python,git
 
-wifite|wifite|null|https://github.com/derv82/wifite.git|git|python,git
+wifite|wifite|wireless_testing|https://github.com/derv82/wifite.git|git|python,git
 
 IP-Locator|IP-Locator|null|https://github.com/zanyarjamal/IP-Locator.git|git|perl,git
 
@@ -426,25 +428,25 @@ WPSeku|WPSeku|null|https://github.com/m4ll0k/WPSeku.git|git|python,git
 
 Blazy|Blazy|null|https://github.com/UltimateHackers/Blazy.git|git|python,git
 
-Crips|Crips|null|https://github.com/Manisso/Crips.git|git|python,git
+Crips|Crips|information_gathering|https://github.com/Manisso/Crips.git|git|python,git
 
 CyberScan|CyberScan|null|https://github.com/medbenali/CyberScan.git|git|python,git
 
-Devploit|Devploit|null|https://github.com/joker25000/Devploit.git|git|python,git
+Devploit|Devploit|information_gathering|https://github.com/joker25000/Devploit.git|git|python,git
 
-commix|commix|null|https://github.com/commixproject/commix.git|git|python,git
+commix|commix|web_hacking|https://github.com/commixproject/commix.git|git|python,git
 
 DSVW|DSVW|null|https://github.com/stamparm/DSVW.git|git|python,git
 
 DSXS|DSXS|null|https://github.com/stamparm/DSXS.git|git|python,git
 
-GoldenEye|GoldenEye|null|https://github.com/jseidl/GoldenEye.git|git|python,git
+GoldenEye|GoldenEye|stress_testing|https://github.com/jseidl/GoldenEye.git|git|python,git
 
 HTools|HTools|null|https://github.com/mehedishakeel/HTools.git|git|git
 
-hulk|hulk|null|https://github.com/grafov/hulk.git|git|python,git
+hulk|hulk|ddos|https://github.com/grafov/hulk.git|git|python,git
 
-netattack2|netattack2|null|https://github.com/chrizator/netattack2.git|git|python,git
+netattack2|netattack2|wireless_testing|https://github.com/chrizator/netattack2.git|git|python,git
 
 nikto|nikto|null|https://github.com/sullo/nikto.git|git|perl,git
 
@@ -456,21 +458,25 @@ cpscan|cpscan|null|https://github.com/susmithHCK/cpscan.git|git|python,git
 
 Sn1per|Sn1per|null|https://github.com/1N3/Sn1per.git|git|python,git
 
-SocialFish|SocialFish|null|https://github.com/UndeadSec/SocialFish.git|git|python,git
+SocialFish|SocialFish|password_attack,sniffing_spoofing|https://github.com/UndeadSec/SocialFish.git|git|python,git
 
-Spammer-Grab|Spammer-Grab|null|https://github.com/p4kl0nc4t/Spammer-Grab.git|git|python,git
+Spammer-Grab|Spammer-Grab|sniffing_spoofing|https://github.com/p4kl0nc4t/Spammer-Grab.git|git|python,git
 
-txtool|txtool|null|https://github.com/kuburan/txtool.git|git|python,git
+txtool|txtool|exploitation_tools|https://github.com/kuburan/txtool.git|git|python,git
 
-wifresti|wifresti|null|https://github.com/LionSec/wifresti.git|git|python,git
+wifresti|wifresti|wireless_testing|https://github.com/LionSec/wifresti.git|git|python,git
 
-XAttacker|XAttacker|null|https://github.com/Moham3dRiahi/XAttacker.git|git|perl,php,git
+XAttacker|XAttacker|vulnerability_scanner,web_hacking,exploitation_tools|https://github.com/Moham3dRiahi/XAttacker.git|git|perl,php,git
 
 QRLJacking|QRLJacking|null|https://github.com/OWASP/QRLJacking.git|git|python,git
 
-santet-online|santet-online|null|https://github.com/Gameye98/santet-online.git|git|python,git
+santet-online|santet-online|stress_testing,sniffing_spoofing|https://github.com/Gameye98/santet-online.git|git|python,git
 
 Th3inspector|Th3inspector|null|https://github.com/Moham3dRiahi/Th3inspector.git|git|perl,git
+
+Tool-X|Tool-X|null|https://github.com/Rajkumrdusad/Tool-X.git|git|python,git
+
+RED_HAWK|RED_HAWK|information_gathering,vulnerability_scanner|https://github.com/Tuhinshubhra/RED_HAWK.git|git|php,git
 
 termux-ubuntu|termux-ubuntu|null|https://github.com/Neo-Oli/termux-ubuntu.git|git|git
 
