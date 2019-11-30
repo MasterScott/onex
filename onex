@@ -1272,7 +1272,7 @@ cli_install() {
   if [ $get_tool_data ]; then
     install_process $get_tool_data
   else
-    echo "\007\033[01;31mSorry \033[00m: '$1' \033[01;31mtool not found !!\033[00m"
+    echo "\033[01;31mSorry \033[00m: '$1' \033[01;31mtool not found !!\033[00m"
     similar=`grep -i "^$1" $tools_data | cut -d"|" -f1`
     if [ "$similar" ]; then
       echo "\033[01;34mDid you mean\033[00m:"
@@ -1312,7 +1312,7 @@ cli_remove() {
   # check onex removed or not
   if [ ! -e $bin/onex ]; then
     if [ ! -d $conf_dir/onex ]; then
-      echo "\007\033[00m'onex' : \033[01;31muninstalled successfully !!\033[00m"
+      echo "\033[00m'onex' : \033[01;32muninstalled successfully !!\033[00m"
     fi
   fi
 }
@@ -1346,7 +1346,7 @@ if [ $# -eq 1 ]; then
       echo "  start \tstart onex menu mode."
     ;;
     *)
-      echo "\007\033[01;31mSorry \033[00m: '$1' \033[01;31minvalid option!!\033[00m"
+      echo "\033[01;31mSorry \033[00m: '$1' \033[01;31minvalid option!!\033[00m"
       echo "\033[01;34mtype \033[00m:\n  'onex -h' or 'onex help' for help.\033[00m"
     ;;
   esac
@@ -1358,7 +1358,7 @@ elif [ $# -eq 2 ]; then
           cli_list_all
          ;;
         *)
-          echo "\007\033[01;31mSorry \033[00m: '$2' \033[01;31minvalid option!!\033[00m"
+          echo "\033[01;31mSorry \033[00m: '$2' \033[01;31minvalid option!!\033[00m"
           echo "\033[01;34mtype \033[00m:\n  'onex -h' or 'onex help' for help.\033[00m"
         ;;
       esac
@@ -1370,7 +1370,7 @@ elif [ $# -eq 2 ]; then
       cli_search $2
     ;;
     *)
-      echo "\007\033[01;31mSorry \033[00m: '$1' \033[01;31minvalid option!!\033[00m"
+      echo "\033[01;31mSorry \033[00m: '$1' \033[01;31minvalid option!!\033[00m"
       echo "\033[01;34mtype \033[00m:\n  'onex -h' or 'onex help' for help.\033[00m"
     ;;
   esac

@@ -132,7 +132,7 @@ fi
 # setup process
 clear
 echo "$logo"
-echo "\007\033[01;32m Installing .... \033[00m"
+echo "\033[01;32m Installing .... \033[00m"
 sleep 1
 echo "\033[01;33m Running setup .... \033[00m"
 sleep 1
@@ -216,8 +216,8 @@ if [ -e $bin/onex ]; then
   if [ -d $conf_dir/onex ]; then
     clear
     echo "$logo"
-    echo " \033[01;33mOnex \033[01;32mis installed successfully !!"
-    echo " \033[01;32mfor more information type \033[01;33m'onex -h'\033[00m"
+    echo " \033[00mOnex \033[01;32minstalled successfully !!"
+    echo " \033[01;32mtype \033[00m'onex -h'\033[01;32m for more.\033[00m"
   else
     clear
     echo "$logo"
