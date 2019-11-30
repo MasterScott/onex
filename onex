@@ -989,9 +989,9 @@ cli_update() {
         update_process
       fi
     fi
-    echo "\007\033[00m'onex' \033[01;32mupdated successfully !!\033[00m"
+    echo "\033[00m'onex' \033[01;32mupdated successfully !!\033[00m"
   else
-    echo "\007\033[01;31mSorry \033[00m: you are \033[01;31moffline \033[00m!!\033[00m"
+    echo "\033[01;31mSorry \033[00m: you are \033[01;31moffline \033[00m!!\033[00m"
   fi
 }
 
@@ -1296,7 +1296,7 @@ cli_search() {
 
 # remove function
 cli_remove() {
-  # add remove tools for remove tools data now it only uninstall onex.
+  # add remove tools functionality for remove tools data now it only uninstall onex.
   # removing onex only
   if [ -e $bin/onex ]; then
     if [ -d $conf_dir/onex ]; then

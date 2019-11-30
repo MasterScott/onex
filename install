@@ -187,9 +187,9 @@ if [ $0 = "install" -o $0 = "./install" ]; then
   cd ..
   if [ -d onex ]; then
     if [ $sudo ]; then
-    $sudo mv -v onex $dir
+    $sudo mv -v onex $conf_dir
     else
-      mv -v onex $dir
+      mv -v onex $conf_dir
     fi
   fi
 else
