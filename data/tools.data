@@ -24,7 +24,7 @@ nmap|nmap|information_gathering,vulnerability_scanner|null|package_manager|null
 
 hydra|hydra|stress_testing,password_attack|null|package_manager|null
 
-sqlmap|sqlmap|information_gathering,vulnerability_scanner,web_hacking,exploitation_tools|https://github.com/sqlmapproject/sqlmap|git|python,git
+sqlmap|sqlmap|information_gathering,vulnerability_scanner,exploitation_tools,web_hacking|https://github.com/sqlmapproject/sqlmap|git|python,git
 
 admin-panel-finder|admin-panel-finder|web_hacking|https://github.com/bdblackhat/admin-panel-finder.git|git|python,git
 
@@ -242,8 +242,6 @@ demiguise|demiguise|null|https://github.com/nccgroup/demiguise.git|git|python,gi
 
 DKMC|DKMC|null|https://github.com/Mr-Un1k0d3r/DKMC.git|git|python,git
 
-beef|beef|null|https://github.com/beefproject/beef.git|git|ruby,git
-
 LALIN|LALIN|null|https://github.com/Screetsec/LALIN.git|git|git
 
 bleachbit|bleachbit|null|https://github.com/bleachbit/bleachbit.git|git|python,git
@@ -388,9 +386,9 @@ routersploit|routersploit|vulnerability_scanner,exploitation_tools|https://githu
 
 SCANNER-INURLBR|SCANNER-INURLBR|web_hacking|https://github.com/googleinurl/SCANNER-INURLBR.git|git|php,git
 
-social-engineer-toolkit|social-engineer-toolkit|information_gathering,password_attack,sniffing_spoofing|https://github.com/trustedsec/social-engineer-toolkit.git|git|python,git
+social-engineer-toolkit|social-engineer-toolkit|information_gathering,exploitation_tools,password_attack,sniffing_spoofing|https://github.com/trustedsec/social-engineer-toolkit.git|git|python,git
 
-SET|social-engineer-toolkit|information_gathering,password_attack,sniffing_spoofing|https://github.com/trustedsec/social-engineer-toolkit.git|git|python,git
+SET|social-engineer-toolkit|information_gathering,exploitation_tools,password_attack,sniffing_spoofing|https://github.com/trustedsec/social-engineer-toolkit.git|git|python,git
 
 Breacher|Breacher|web_hacking|https://github.com/UltimateHackers/Breacher.git|git|python,git
 
@@ -434,7 +432,7 @@ CyberScan|CyberScan|null|https://github.com/medbenali/CyberScan.git|git|python,g
 
 Devploit|Devploit|information_gathering|https://github.com/joker25000/Devploit.git|git|python,git
 
-commix|commix|web_hacking|https://github.com/commixproject/commix.git|git|python,git
+commix|commix|exploitation_tools,web_hacking|https://github.com/commixproject/commix.git|git|python,git
 
 DSVW|DSVW|null|https://github.com/stamparm/DSVW.git|git|python,git
 
@@ -498,7 +496,7 @@ dnsmap|dnsmap|information_gathering|https://github.com/makefu/dnsmap.git|git|cla
 
 dnsrecon|dnsrecon|information_gathering|https://github.com/darkoperator/dnsrecon.git|git|python,ruby,git
 
-dotdotpwn|dotdotpwn|information_gathering|https://github.com/wireghoul/dotdotpwn.git|git|perl,git
+dotdotpwn|dotdotpwn|information_gathering,vulnerability_scanner|https://github.com/wireghoul/dotdotpwn.git|git|perl,git
 
 enum4linux|enum4linux|information_gathering|https://github.com/portcullislabs/enum4linux.git|git|perl,git
 
@@ -542,12 +540,70 @@ sslyze|sslyze|information_gathering|https://github.com/iSECPartners/sslyze.git|g
 
 Sublist3r|Sublist3r|information_gathering|https://github.com/aboul3la/Sublist3r.git|git|python,git
 
-thc-ipv6|thc-ipv6|information_gathering|https://github.com/vanhauser-thc/thc-ipv6.git|git|clang,gcc,git
+thc-ipv6|thc-ipv6|information_gathering,vulnerability_scanner,exploitation_tools|https://github.com/vanhauser-thc/thc-ipv6.git|git|clang,gcc,git
 
-termux-ubuntu|termux-ubuntu|null|https://github.com/Neo-Oli/termux-ubuntu.git|git|git
+bbqsql|bbqsql|vulnerability_scanner|https://github.com/Neohapsis/bbqsql.git|git|python,git
+
+bed|bed|vulnerability_scanner|https://gitlab.com/kalilinux/packages/bed.git|git|perl,git
+
+doona|doona|vulnerability_scanner|https://github.com/wireghoul/doona.git|git|perl,git
+
+jsql-injection|jsql-injection|vulnerability_scanner|https://github.com/ron190/jsql-injection.git|git|php,git
+
+lynis|lynis|vulnerability_scanner|https://github.com/CISOfy/lynis.git|git|git
+
+openvas|openvas|vulnerability_scanner|https://github.com/greenbone/openvas.git|git|clang,gcc,git
+
+powerfuzzer|powerfuzzer|vulnerability_scanner|https://gitlab.com/marcinguy/powerfuzzer.git|git|python,git
+
+Simple-Fuzzer|Simple-Fuzzer|vulnerability_scanner|https://github.com/orgcandman/Simple-Fuzzer.git|git|clang,gcc,git
+
+yersinia|yersinia|vulnerability_scanner,exploitation_tools|https://github.com/tomac/yersinia.git|git|clang,gcc,git
+
+the-backdoor-factory|the-backdoor-factory|exploitation_tools|https://github.com/secretsquirrel/the-backdoor-factory.git|git|python,git
+
+beef|beef|exploitation_tools|https://github.com/beefproject/beef.git|git|ruby,git
+
+crackle|crackle|exploitation_tools,wireless_testing|https://github.com/mikeryan/crackle.git|git|clang,gcc,perl,git
+
+exploitdb|exploitdb|exploitation_tools|https://github.com/offensive-security/exploitdb.git|git|clang,gcc,python,git
+
+metasploit-framework|msfinstall|exploitation_tools|https://raw.githubusercontent.com/rapid7/metasploit-omnibus/master/config/templates/metasploit-framework-wrappers/msfupdate.erb|curl|curl
+
+msfpc|msfpc|exploitation_tools|https://github.com/g0tmi1k/msfpc.git|git|git
+
+cowpatty|cowpatty|wireless_testing|https://github.com/joswr1ght/cowpatty.git|git|clang,gcc,git
+
+fern-wifi-cracker|fern-wifi-cracker|wireless_testing|https://github.com/savio-code/fern-wifi-cracker.git|git|python,git
+
+giskismet|giskismet|wireless_testing|https://github.com/xtr4nge/giskismet.git|git|perl,git
+
+kalibrate-rtl|kalibrate-rtl|wireless_testing|https://github.com/steve-m/kalibrate-rtl.git|git|clang,gcc,g++,git
+
+killerbee|killerbee|wireless_testing|https://github.com/riverloopsec/killerbee.git|git|python,clang,gcc,g++,git
+
+mfcuk|mfcuk|wireless_testing|https://github.com/nfc-tools/mfcuk.git|git|clang,gcc,git
+
+mfoc|mfoc|wireless_testing|https://github.com/nfc-tools/mfoc.git|git|clang,gcc,git
+
+mfterm|mfterm|wireless_testing|https://github.com/4ZM/mfterm.git|git|clang,gcc,git
+
+multimon-ng|multimon-ng|wireless_testing|https://github.com/EliasOenal/multimon-ng.git|git|python,clang,gcc,git
+
+Pyrit|Pyrit|wireless_testing|https://github.com/JPaulMora/Pyrit.git|git|python,clang,gcc,git
+
+reaver|reaver-wps-fork-t6x|wireless_testing|https://github.com/t6x/reaver-wps-fork-t6x.git|git|clang,gcc,git
+
+RTLSDR-Scanner|RTLSDR-Scanner|wireless_testing|https://github.com/EarToEarOak/RTLSDR-Scanner.git|git|python,git
+
+wifitap|wifitap|wireless_testing|https://github.com/GDSSecurity/wifitap.git|git|python,git
+
+pixiewps|pixiewps|wireless_testing|https://github.com/wiire-a/pixiewps.git|git|clang,gcc,git
+
+termux-ubuntu|termux-ubuntu|termux_os|https://github.com/Neo-Oli/termux-ubuntu.git|git|git
 
 arch-linux|setupTermuxArch.sh|termux_os|https://raw.githubusercontent.com/sdrausty/TermuxArch/master/setupTermuxArch.sh|curl|curl
 
-termux-fedora|termux-fedora|null|https://github.com/nmilosev/termux-fedora.git|git|git
+termux-fedora|termux-fedora|termux_os|https://github.com/nmilosev/termux-fedora.git|git|git
 
-TermuxAlpine|TermuxAlpine|null|https://github.com/Hax4us/TermuxAlpine.git|git|git
+TermuxAlpine|TermuxAlpine|termux_os|https://github.com/Hax4us/TermuxAlpine.git|git|git
