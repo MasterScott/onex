@@ -821,19 +821,23 @@ update() {
           if [ -e $bin/git ]; then
             if [ $sudo ]; then
               $sudo git clone https://github.com/Rajkumrdusad/onex.git ~/onex
+              $sudo chmod +x ~/onex/install
               $sudo sh ~/onex/install
             else
               git clone https://github.com/Rajkumrdusad/onex.git ~/onex
+              chmod +x ~/onex/install
               sh ~/onex/install
             fi
           else
             if [ $sudo ]; then
               $sudo $pac install git -y
               $sudo git clone https://github.com/Rajkumrdusad/onex.git ~/onex
+              $sudo chmod +x ~/onex/install
               $sudo sh ~/onex/install
             else
               $pac install git -y
               git clone https://github.com/Rajkumrdusad/onex.git ~/onex
+              chmod +x ~/onex/install
               sh ~/onex/install
             fi
           fi
@@ -925,20 +929,6 @@ cli_category() {
     done
   done
 }
-
-# update process
-# removing old one
-if [ -e $bin/onex ]; then
-  if [ -d $dir/onex ]; then
-    if [ $sudo ]; then
-      $sudo rm -rf $bin/onex
-      $sudo rm -rf $dir/onex
-    else
-      rm -rf $bin/onex
-      rm -rf $dir/onex
-    fi
-  fi
-fi
 
 # update process
 update_process() {
@@ -1269,10 +1259,11 @@ install_process() {
 # check tool is exists or not
 cli_install() {
   # get tools data
-  for data in `grep "^$1" $tools_data`; do
+  for data in `grep -i "^$1" $tools_data`; do
     # display tools name from data
     for tool in $data; do
-      if [ `echo $tool | cut -d"|" -f1` = $1 ]; then
+      # convert to lower case and check tool name
+      if [ `echo $tool | cut -d"|" -f1 | tr 'A-Z' 'a-z'` = `echo $1 | tr 'A-Z' 'a-z'` ]; then
         get_tool_data=$tool
       fi
     done
@@ -1303,6 +1294,29 @@ cli_search() {
   fi
 }
 
+# remove function
+cli_remove() {
+  # add remove tools for remove tools data now it only uninstall onex.
+  # removing onex only
+  if [ -e $bin/onex ]; then
+    if [ -d $conf_dir/onex ]; then
+      if [ $sudo ]; then
+        $sudo rm -rf $bin/onex
+        $sudo rm -rf $conf_dir/onex
+      else
+        rm -rf $bin/onex
+        rm -rf $conf_dir/onex
+      fi
+    fi
+  fi
+  # check onex removed or not
+  if [ ! -e $bin/onex ]; then
+    if [ ! -d $conf_dir/onex ]; then
+      echo "\007\033[00m'onex' : \033[01;31muninstalled successfully !!\033[00m"
+    fi
+  fi
+}
+
 # cli mode
 if [ $# -eq 1 ]; then
   case $1 in
@@ -1314,6 +1328,9 @@ if [ $# -eq 1 ]; then
     ;;
     update|-u)
       cli_update
+    ;;
+    remove|-r)
+      cli_remove
     ;;
     help|-h)
       echo "\033[01;33mOnex \033[01;31mv0.1"
