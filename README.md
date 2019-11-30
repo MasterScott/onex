@@ -1,6 +1,7 @@
 # Onex v2.0
 
-*Onex is a library of all hacking tools for termux and other linux distribution.*
+***"onex a hacking tools library."***
+Onex is a kali linux hacking tools installer for termux and other linux distribution.
 onex is for Termux and other android terminals. Using onex, you can install all hacking tools in Termux and other Linux based distributions.
 onex can install any tools jus single click. use `onex install [tool_name]` command to install any hacking tool.
 
