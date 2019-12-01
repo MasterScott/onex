@@ -295,6 +295,7 @@ ridenum|ridenum|maintaining_access|https://github.com/trustedsec/ridenum.git|git
 routersploit|routersploit|vulnerability_scanner,exploitation_tools|https://github.com/reverse-shell/routersploit.git|git|python,git
 roxysploit|roxysploit|exploitation_tools|https://github.com/andyvaikunth/roxysploit.git|git|python,git
 ruby|ruby|programming_language|null|package_manager|null
+C++|gpp|programming_language|null|package_manager|null
 sAINT|sAINT|null|https://github.com/tiagorlampert/sAINT.git|git|git
 santet-online|santet-online|stress_testing,sniffing_spoofing|https://github.com/Gameye98/santet-online.git|git|python,git
 secHub|secHub|null|https://github.com/cys3c/secHub.git|git|python,git
