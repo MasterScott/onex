@@ -16,8 +16,8 @@ onex can install **more than 370+ kali linux hacking tools**. use `onex install 
 ## Operating System Requirements
 
 onex works on any of the following operating systems:<br>
-- Android (Using the Termux App) <br>
-- Linux (Linux Based Systems) <br>
+- **Android** (Using the Termux App) <br>
+- **Linux** (Linux Based Systems) <br>
 
 ------------------------------------------------------------------------
 
