@@ -1,7 +1,7 @@
 #!/bin/sh
-# Onex v0.1
+# Name : Onex v0.1
 # Date : 24 November 2019
-# onex is a large collection of third party tools and library for linux.
+# onex is a hacking tools installer and package manager for hacker's.
 
 logo="\033[01;33m
   ___  _ __   ___\033[01;31m__  __
@@ -32,25 +32,25 @@ elif [ -d /etc ]; then
 fi
 
 if [ -d /data/data/com.termux/files/usr/etc/onex ]; then
-  if [ -e /data/data/com.termux/files/usr/etc/onex/data/tools.data ]; then
-    tools_data="/data/data/com.termux/files/usr/etc/onex/data/tools.data"
+  if [ -e /data/data/com.termux/files/usr/etc/onex/data/tools.dat ]; then
+    tools_data="/data/data/com.termux/files/usr/etc/onex/data/tools.dat"
   fi
-  if [ -e /data/data/com.termux/files/usr/etc/onex/data/category.data ]; then
-    category_data="/data/data/com.termux/files/usr/etc/onex/data/category.data"
+  if [ -e /data/data/com.termux/files/usr/etc/onex/data/category.dat ]; then
+    category_data="/data/data/com.termux/files/usr/etc/onex/data/category.dat"
   fi
 elif [ -d /etc/onex ]; then
-  if [ -e /etc/onex/data/tools.data ]; then
-    tools_data="/etc/onex/data/tools.data"
+  if [ -e /etc/onex/data/tools.dat ]; then
+    tools_data="/etc/onex/data/tools.dat"
   fi
-  if [ -e /etc/onex/data/category.data ]; then
-    category_data="/etc/onex/data/category.data"
+  if [ -e /etc/onex/data/category.dat ]; then
+    category_data="/etc/onex/data/category.dat"
   fi
 else
-  if [ -e data/tools.data ]; then
-    tools_data="data/tools.data"
+  if [ -e data/tools.dat ]; then
+    tools_data="data/tools.dat"
   fi
-  if [ -e data/category.data ]; then
-    category_data="data/category.data"
+  if [ -e data/category.dat ]; then
+    category_data="data/category.dat"
   fi
 fi
 
@@ -1335,15 +1335,16 @@ if [ $# -eq 1 ]; then
     help|-h)
       echo "\033[01;33mOnex \033[01;31mv0.1"
       echo "\033[00mUsage \033[00m: \033[01;33m onex \033[00m[option]... [toolname]...\033[00m"
-      echo "\n  \033[01;34mOption \tUsage\033[00m"
-      echo "  help, -h \tdisplay this help."
-      echo "  list, -l \tlist all tools."
-      echo "  list -a \tlist all tools."
-      echo "  -l a \t\tlist all tools."
-      echo "  install, -i \tinstall any tools."
-      echo "  search, -s \tsearch tools."
-      echo "  update, -u \tupdate onex."
-      echo "  start \tstart onex menu mode."
+      echo "\n  \033[01;34mOption  \tDescription\033[00m"
+      echo "  -----------  \t--------------------"
+      echo "  help, -h  \tdisplay this help."
+      echo "  list, -l  \tlist all tools."
+      echo "  list -a  \tlist all tools."
+      echo "  -l a  \tlist all tools."
+      echo "  install, -i  \tinstall any tools."
+      echo "  search, -s  \tsearch tools."
+      echo "  update, -u  \tupdate onex."
+      echo "  start  \tstart onex menu mode."
     ;;
     *)
       echo "\033[01;31mSorry \033[00m: '$1' \033[01;31minvalid option!!\033[00m"
