@@ -153,7 +153,7 @@ bleachbit|bleachbit|null|https://github.com/bleachbit/bleachbit.git|git|python,g
 braa|braa|information_gathering|https://github.com/mteg/braa.git|git|clang,gcc,git
 brutespray|brutespray|null|https://github.com/x90skysn3k/brutespray.git|git|python,git
 bulk_extractor|bulk_extractor|forensics_tools|https://github.com/simsong/bulk_extractor.git|git|clang,gcc,g++,git
-c++|clang|programming_language|null|package_manager|null
+c++|gpp|programming_language|null|package_manager|null
 capstone|capstone|forensics_tools|https://github.com/aquynh/capstone.git|git|clang,gcc,python,git
 catphish|catphish|null|https://github.com/ring0lab/catphish.git|git|ruby,git
 cdpsnarf|cdpsnarf|information_gathering|https://github.com/Zapotek/cdpsnarf.git|git|clang,gcc,git
@@ -217,6 +217,7 @@ gobuster|gobuster|web_hacking|https://github.com/OJ/gobuster.git|git|golang,git
 golang|golang|programming_language|null|package_manager|null
 golismero|golismero|information_gathering|https://github.com/golismero/golismero.git|git|python,git
 goofile|goofile|information_gathering|https://gitlab.com/kalilinux/packages/goofile.git|git|python,git
+gcc|gcc|programming_language|null|package_manager|null
 hURL|hURL|web_hacking|https://github.com/fnord0/hURL.git|git|perl,git
 hacktronian|hacktronian|null|https://github.com/thehackingsage/hacktronian.git|git|git
 hakkuframework|hakkuframework|null|https://github.com/4shadoww/hakkuframework.git|git|python,git
@@ -295,7 +296,6 @@ ridenum|ridenum|maintaining_access|https://github.com/trustedsec/ridenum.git|git
 routersploit|routersploit|vulnerability_scanner,exploitation_tools|https://github.com/reverse-shell/routersploit.git|git|python,git
 roxysploit|roxysploit|exploitation_tools|https://github.com/andyvaikunth/roxysploit.git|git|python,git
 ruby|ruby|programming_language|null|package_manager|null
-C++|gpp|programming_language|null|package_manager|null
 sAINT|sAINT|null|https://github.com/tiagorlampert/sAINT.git|git|git
 santet-online|santet-online|stress_testing,sniffing_spoofing|https://github.com/Gameye98/santet-online.git|git|python,git
 secHub|secHub|null|https://github.com/cys3c/secHub.git|git|python,git
