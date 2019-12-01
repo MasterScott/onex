@@ -7,8 +7,8 @@ onex can install **more than 370+ kali linux hacking tools**. use `onex install 
 
 <br>
 <p align="center">
-<img width="46%" src="https://github.com/Rajkumrdusad/onex/blob/master/doc/Screenshot_2019-12-01-12-10-02-1.png"/>
-<img width="48%" src="https://github.com/Rajkumrdusad/onex/blob/master/doc/Screenshot_2019-12-01-12-09-26-1.png"/>
+<img width="47%" src="https://github.com/Rajkumrdusad/onex/blob/master/doc/Screenshot_2019-12-01-12-10-02-1.png"/>
+<img width="46%" src="https://github.com/Rajkumrdusad/onex/blob/master/doc/Screenshot_2019-12-01-12-09-26-1.png"/>
 </p>
 
 ------------------------------------------------------------------------
