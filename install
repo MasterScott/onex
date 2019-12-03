@@ -13,120 +13,82 @@ else
   home="~/"
 fi
 
-if [ -d /bin ]; then
-  bin="/bin"
+if [ -d /data/data/com.termux/files/usr/bin ]; then
+  bin="/data/data/com.termux/files/usr/bin"
 elif [ -d /usr/bin ]; then
   bin="/usr/bin"
-elif [ -d /data/data/com.termux/files/usr/bin ]; then
-  bin="/data/data/com.termux/files/usr/bin"
+elif [ -d /bin ]; then
+  bin="/bin"
 fi
 
 if [ -d /data/data/com.termux/files/usr/etc ]; then
   conf_dir="/data/data/com.termux/files/usr/etc"
+elif [ -d /usr/etc ]; then
+  conf_dir="/usr/etc"
 elif [ -d /etc ]; then
   conf_dir="/etc"
 fi
 
+if [ -d $conf_dir/onex ]; then
+  if [ -e $conf_dir/onex/data/tools.dat ]; then
+    tools_data="$conf_dir/onex/data/tools.dat"
+  fi
+  if [ -e $conf_dir/onex/data/category.dat ]; then
+    category_data="$conf_dir/onex/data/category.dat"
+  fi
+else
+  if [ -e data/tools.dat ]; then
+    tools_data="data/tools.dat"
+  fi
+  if [ -e data/category.dat ]; then
+    category_data="data/category.dat"
+  fi
+fi
+
+if [ -e /usr/lib/sudo ]; then
+  sudo="sudo"
+elif [ -e /usr/bin/sudo ]; then
+  sudo="sudo"
+elif [ -e /lib/sudo ]; then
+  sudo="sudo"
+elif [ -e /bin/sudo ]; then
+  sudo="sudo"
+elif [ -e /data/data/com.termux/files/usr/bin/sudo ]; then
+  sudo="sudo"
+else
+  sudo=""
+fi
+
 if [ -e /bin/apt ]; then
-  if [ -e /bin/sudo ]; then
-    pac="sudo apt-get"
-    system="linux"
-    sudo="sudo"
-  else
-    pac="apt-get"
-    system="linux"
-    sudo=""
-  fi
+  pac="apt-get"
+  system="linux"
 elif [ -e /bin/apt-get ]; then
-  if [ -e /bin/sudo ]; then
-    pac="sudo apt-get"
-    system="linux"
-    sudo="sudo"
-  else
-    pac="apt-get"
-    system="linux"
-    sudo=""
-  fi
+  pac="apt-get"
+  system="linux"
 elif [ -e /usr/bin/apt-get ]; then
-  if [ -e /usr/bin/sudo ]; then
-    pac="sudo apt-get"
-    system="linux"
-    sudo="sudo"
-  else
-    pac="apt-get"
-    system="linux"
-    sudo=""
-  fi
+  pac="apt-get"
+  system="linux"
 elif [ -e /bin/yum ]; then
-  if [ -e /bin/sudo ]; then
-    pac="sudo yum"
-    system="fedora"
-    sudo="sudo"
-  else
-    pac="yum"
-    system="fedora"
-    sudo=""
-  fi
+  pac="yum"
+  system="fedora"
 elif [ -e /usr/bin/yum ]; then
-  if [ -e /usr/bin/sudo ]; then
-    pac="sudo yum"
-    system="fedora"
-    sudo="sudo"
-  else
-    pac="yum"
-    system="fedora"
-    sudo=""
-  fi
+  pac="yum"
+  system="fedora"
 elif [ -e /bin/brew ]; then
-  if [ -e /bin/sudo ]; then
-    pac="sudo brew"
-    system="mac"
-    sudo="sudo"
-  else
-    pac="brew"
-    system="mac"
-    sudo=""
-  fi
+  pac="brew"
+  system="mac"
 elif [ -e /usr/bin/brew ]; then
-  if [ -e /usr/bin/sudo ]; then
-    pac="sudo brew"
-    system="mac"
-    sudo="sudo"
-  else
-    pac="brew"
-    system="mac"
-    sudo=""
-  fi
+  pac="brew"
+  system="mac"
 elif [ -e /data/data/com.termux/files/usr/bin/pkg ]; then
-  if [ -e /data/data/com.termux/files/usr/bin/sudo ]; then
-    pac="sudo pkg"
-    system="termux"
-    sudo="sudo"
-  else
-    pac="pkg"
-    system="termux"
-    sudo=""
-  fi
+  pac="pkg"
+  system="termux"
 elif [ -e /data/data/com.termux/files/usr/bin/apt ]; then
-  if [ -e /data/data/com.termux/files/usr/bin/sudo ]; then
-    pac="sudo apt"
-    system="termux"
-    sudo="sudo"
-  else
-    pac="apt"
-    system="termux"
-    sudo=""
-  fi
+  pac="apt"
+  system="termux"
 elif [ -e /data/data/com.termux/files/usr/bin/apt-get ]; then
-  if [ -e /data/data/com.termux/files/usr/bin/sudo ]; then
-    pac="sudo apt-get"
-    system="termux"
-    sudo="sudo"
-  else
-    pac="apt-get"
-    system="termux"
-    sudo=""
-  fi
+  pac="apt-get"
+  system="termux"
 fi
 
 # setup process
